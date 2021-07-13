@@ -1,5 +1,6 @@
 # Given an unsorted integer array with max value n = length(integers), 
 # find the first missing positive integer in O(n) time with constant space.
+# Used partial sum formula from: https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 def first_missing_positive_integer_unsorted_On(integers):
     n = len(integers)
     result = partial(n) - sum(integers)
